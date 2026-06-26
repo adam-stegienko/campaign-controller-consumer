@@ -1,0 +1,22 @@
+spring:
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+      - org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
+      - org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration
+      - org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration
+      - org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration
+
+# OpenAPI properties
+springdoc:
+  swagger-ui:
+    enabled: true
+    operations-sorter: method
+    path: /swagger-ui
+  api-docs:
+    path: /api-docs
+
+logging:
+  level:
+    io.micrometer.tracing: DEBUG
+    org.springframework.web: DEBUG
