@@ -43,7 +43,9 @@ management:
     defaults:
       enabled: true
     db:
-      enabled: true
+      enabled: false
+    rabbit:
+      enabled: false
   tracing:
     enabled: ${MANAGEMENT_TRACING_EXPORTER_OTLP_ENABLED:false}
     sampling:
