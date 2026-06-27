@@ -20,3 +20,5 @@ logging:
   level:
     io.micrometer.tracing: DEBUG
     org.springframework.web: DEBUG
+    org.springframework.amqp: DEBUG
+    com.rabbitmq: DEBUG
