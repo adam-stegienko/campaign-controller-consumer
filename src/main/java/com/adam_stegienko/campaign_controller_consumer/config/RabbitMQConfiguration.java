@@ -46,10 +46,7 @@ public class RabbitMQConfiguration {
 
     @Bean
     public Queue campaignQueue() {
-        return QueueBuilder.durable(queue)
-                .withArgument("x-dead-letter-exchange", dlx)
-                .withArgument("x-dead-letter-routing-key", errorRoutingKey)
-                .build();
+        return QueueBuilder.durable(queue).build();
     }
 
     @Bean
